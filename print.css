@@ -1,0 +1,93 @@
+@page {
+  size: letter portrait;
+  margin: 1in;
+}
+
+/* Letter's printable content area is 6.5 by 9 inches. */
+html { scroll-behavior: auto; }
+body { margin: 0; background: white; color: #163449; font-size: 9pt; line-height: 1.45; }
+*, *::before, *::after { box-shadow: none !important; text-shadow: none !important; }
+.header, main, footer { width: 100%; max-width: none; margin: 0; padding-left: 0; padding-right: 0; }
+.header { padding-top: 0; padding-bottom: 12pt; gap: 12pt; break-inside: avoid; }
+.brand { width: 3.8in; max-width: 100%; }
+.edition { display: none; }
+.hero { display: block; padding: 16pt 0 18pt; break-inside: avoid; }
+.eyebrow, .small-label { font-size: 7pt; letter-spacing: 1pt; }
+.hero h1 { font-size: 25pt; letter-spacing: -.8pt; margin: 8pt 0 10pt; }
+.hero h1 br { display: none; }
+.hero > div > p { max-width: none; font-size: 9pt; line-height: 1.5; }
+.hero-note { padding: 10pt 12pt; margin-top: 12pt; background: #f3f6f3; color: #163449; border: 1px solid #dce3df; }
+.hero-note::after, .hero-note strong, .hero-rule, .hero-note > .small-label:last-child { display: none; }
+.hero-note .small-label { color: #008568; }
+.hero-note .badge { color: #008568; margin-left: 10pt; font-size: 8pt; }
+.hero .hero-note p { color: #64737c; font-size: 8pt; margin: 5pt 0 0; }
+.hero-note p br { display: inline; }
+.hero-actions, .tabs, .sources, .social, .chart-data, dialog { display: none !important; }
+.section { margin-bottom: 18pt; }
+.section-heading { display: block; margin-bottom: 12pt; break-after: avoid; }
+h2, .card h2, .employer h2 { font-size: 17pt; letter-spacing: -.4pt; }
+h3 { font-size: 12pt; }
+h2, h3, .subheading { break-after: avoid; }
+p, li { orphans: 3; widows: 3; }
+.period { display: block; margin-top: 5pt; font-size: 7pt; }
+.metrics { grid-template-columns: repeat(3, minmax(0, 1fr)); break-inside: avoid; }
+.metric { min-width: 0; padding: 12pt 10pt; border-right: 1px solid #dce3df; border-bottom: 0; }
+.metric:nth-child(n) { border-right: 1px solid #dce3df; border-bottom: 0; }
+.metric:nth-child(3n) { border-right: 0; }
+.metric:nth-child(-n+3) { border-bottom: 1px solid #dce3df; }
+.metric .metric-value { font-size: 25pt; }
+.metric .metric-label { font-size: 8pt; margin: 6pt 0 4pt; }
+.metric .metric-period, .footnote { font-size: 7pt; }
+.footnote { margin-top: 8pt; }
+.insights { display: block; }
+.card { padding: 14pt; break-inside: avoid; }
+.growth { margin-bottom: 12pt; }
+.growth-pill { display: none; }
+.muted { font-size: 8pt; }
+.chart { height: 1.65in; gap: 12pt; margin-top: 15pt; padding-top: 18pt; }
+.bar-column { padding-bottom: 18pt; }
+.bar-value { font-size: 8pt; top: -16pt; }
+.bar-year { font-size: 7pt; bottom: 1pt; }
+.profile h2 { margin-top: 6pt; }
+.profile h2 br { display: none; }
+.profile-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12pt; margin-top: 12pt; }
+.profile-grid strong { font-size: 22pt; }
+.profile-grid span { font-size: 8pt; }
+.employer { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 18pt; gap: 18pt; break-inside: avoid; }
+.employer h2 { margin: 8pt 0 10pt; }
+.employer p { font-size: 8pt; }
+.rating > strong { font-size: 40pt; }
+.rating > strong > span { font-size: 22pt; }
+.rating > p { margin: 6pt 0 12pt; }
+.legend { font-size: 7pt; gap: 6pt; }
+.rating small { font-size: 7pt; }
+.opportunities [role="tabpanel"]::before { display: block; margin-bottom: 8pt; color: #008568; font-size: 10pt; font-weight: 700; }
+#industry-panel::before { content: "For industry partners"; }
+#student-panel::before { content: "For students & families"; }
+.intro { font-size: 9pt; margin: 12pt 0; }
+.opportunity-grid, .three-grid { display: block; }
+.opportunity-card, .three-grid > article { padding: 12pt; margin-bottom: 9pt; break-inside: avoid; }
+.opportunity-card .number, .three-grid .number { font-size: 8pt; margin-bottom: 6pt; }
+.opportunity-card h3, .three-grid h3 { font-size: 12pt; margin: 4pt 0 6pt; }
+.opportunity-card p, .three-grid p, .three-grid ul { font-size: 9pt; line-height: 1.5; }
+.three-grid ul { margin: 6pt 0; }
+.three-grid li + li { margin-top: 4pt; }
+.priorities { border: 0; padding: 0; margin: 15pt 0; }
+.priorities summary { font-size: 11pt; break-after: avoid; }
+.priorities summary > span { display: none; }
+.priorities .three-grid { margin-top: 10pt; }
+.callout { display: block; padding: 14pt; margin-top: 12pt; break-inside: avoid; }
+.callout h3 { margin: 6pt 0; }
+.callout p { font-size: 8pt; }
+.callout .button { display: none; }
+.subheading { margin: 18pt 0 10pt; }
+.careers { gap: 6pt; }
+.careers span { font-size: 8pt; padding: 6pt 8pt; }
+.student-extras { grid-template-columns: 1fr; gap: 10pt; margin: 15pt 0; font-size: 9pt; }
+.student-extras p { break-inside: avoid; }
+.further { padding-top: 15pt; }
+.further .three-grid { margin-top: 12pt; }
+footer { padding-top: 12pt; padding-bottom: 0; display: block; font-size: 7pt; break-inside: avoid; }
+footer span { display: block; margin-top: 4pt; }
+body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+[hidden] { display: none !important; }
